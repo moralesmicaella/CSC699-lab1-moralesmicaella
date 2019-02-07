@@ -15,6 +15,7 @@
 		24FCEEA5220943ED00380FB4 /* CSC699Lab1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FCEEA4220943ED00380FB4 /* CSC699Lab1Tests.swift */; };
 		24FCEEB0220943ED00380FB4 /* CSC699Lab1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FCEEAF220943ED00380FB4 /* CSC699Lab1UITests.swift */; };
 		24FCEEC02209461F00380FB4 /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FCEEBF2209461F00380FB4 /* PhotosViewController.swift */; };
+		24FCEEC2220957FE00380FB4 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FCEEC1220957FE00380FB4 /* PhotoCell.swift */; };
 		58382F58BBD0F54290F44E36 /* Pods_CSC699Lab1UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C751EFA7A9BDD88EF3D068B /* Pods_CSC699Lab1UITests.framework */; };
 		AA2785C3BD1CAE9928D2FDD4 /* Pods_CSC699Lab1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A4C12A0925D904F6C2D0FF8 /* Pods_CSC699Lab1.framework */; };
 /* End PBXBuildFile section */
@@ -52,6 +53,7 @@
 		24FCEEAF220943ED00380FB4 /* CSC699Lab1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSC699Lab1UITests.swift; sourceTree = "<group>"; };
 		24FCEEB1220943ED00380FB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		24FCEEBF2209461F00380FB4 /* PhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
+		24FCEEC1220957FE00380FB4 /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
 		3A4C12A0925D904F6C2D0FF8 /* Pods_CSC699Lab1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CSC699Lab1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		58B5A9E6441E2FC778FF4250 /* Pods-CSC699Lab1Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CSC699Lab1Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CSC699Lab1Tests/Pods-CSC699Lab1Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		68D4BF4A0A4EF13217B6B89F /* Pods-CSC699Lab1UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CSC699Lab1UITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CSC699Lab1UITests/Pods-CSC699Lab1UITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 				24FCEE8F220943EB00380FB4 /* AppDelegate.swift */,
 				24FCEE93220943EB00380FB4 /* Main.storyboard */,
 				24FCEEBF2209461F00380FB4 /* PhotosViewController.swift */,
+				24FCEEC1220957FE00380FB4 /* PhotoCell.swift */,
 				24FCEE96220943ED00380FB4 /* Assets.xcassets */,
 				24FCEE98220943ED00380FB4 /* LaunchScreen.storyboard */,
 				24FCEE9B220943ED00380FB4 /* Info.plist */,
@@ -328,12 +331,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-CSC699Lab1/Pods-CSC699Lab1-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -392,6 +397,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				24FCEE90220943EB00380FB4 /* AppDelegate.swift in Sources */,
+				24FCEEC2220957FE00380FB4 /* PhotoCell.swift in Sources */,
 				24FCEEC02209461F00380FB4 /* PhotosViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
